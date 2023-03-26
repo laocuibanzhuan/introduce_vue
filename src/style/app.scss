@@ -1,0 +1,14 @@
+@import "./normalize.scss";
+
+//全局css变量
+@import "./var.scss";
+
+//APP页面样式
+//使用响应式布局 阈值为768 1024
+@import "./base.scss";
+
+//暗色主题
+@import "./dark_theme.scss";
+
+//字体与图标
+@import "@p/icon/iconfont.css"
