@@ -39,8 +39,6 @@ export default {
     },
     setup() {
         let curSeleced = ref('education')
-
-
         const educationList = reactive([
             {
                 title: 'qualification1__title',
@@ -94,7 +92,7 @@ export default {
         }
 
         &__sections {
-            width: 500px;
+            width: 100%;
             margin: auto;
         }
     }

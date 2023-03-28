@@ -46,7 +46,7 @@ export default {
     "tel":"Call me",
     "tel__number":"18591972062",
     "email":"E-mail",
-    "email__address":"cuizhouxuan@outlook.com",
+    "email__address":"",
     "location":"Location",
     "location__detail":"shanxi , xian"
 }

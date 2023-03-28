@@ -10,5 +10,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       '@p': path.resolve(__dirname, './public')
     }
+  },
+  server: {
+    host: true,
   }
 })

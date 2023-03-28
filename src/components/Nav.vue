@@ -10,8 +10,8 @@
                     </a>
                 </li>
                 <li class="nav__item">
-                    <div class="nav__link">
-                        <i class="alicon alicon-fanyi1 nav__icon nav__icon--translate" @click="changeLanguage"></i>
+                    <div class="nav__link" @click="changeLanguage">
+                        <i class="alicon alicon-fanyi1 nav__icon nav__icon--translate" ></i>
                         <a class="nav__link" id="translate">中/en</a>
                     </div>
                 </li>
@@ -85,7 +85,9 @@ export default {
         function toggleTheme() {
             store.toggleTheme()
         }
-
+        window.addEventListener('scroll',()=>{
+            menuShow.value = false
+        })
 
         return { menuList, menuShow, changeLanguage, theme, toggleTheme }
     }

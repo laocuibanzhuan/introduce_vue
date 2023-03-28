@@ -47,7 +47,7 @@ export default {
     "tel":"电话",
     "tel__number":"18591972062",
     "email":"电子邮箱",
-    "email__address":"cuizhouxuan@outlook.com",
+    "email__address":"",
     "location":"位置",
     "location__detail":"陕西 , 西安"
     

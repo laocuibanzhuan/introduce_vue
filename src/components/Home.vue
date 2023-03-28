@@ -116,12 +116,11 @@ export default {
 
         &__video {
             margin: auto;
-            height: 300px;
+            height: 200px;
             grid-column: 1/3;
 
             video {
-                height: 100%;
-                max-width: 600px;
+                width: min(80vw, 400px);
                 object-fit: fill;
             }
         }
