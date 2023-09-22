@@ -17,7 +17,7 @@
                     </div>
 
                     <div>
-                        <span class="about__info-title">01+</span>
+                        <span class="about__info-title">1+</span>
                         <span class="about__info-name">{{ $t('about__info-name2') }}</span>
                     </div>
                 </div>

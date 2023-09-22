@@ -11,7 +11,8 @@ const actions = {
     },
     setTheme(theme = this.theme) {
         document.body.setAttribute('data-theme', theme)
-    }, toggleTheme() {
+    },
+    toggleTheme() {
         this.theme = this.theme === 'light' ? 'dark' : 'light'
         localStorage.setItem('theme', this.theme)
         this.setTheme()

@@ -32,7 +32,7 @@ export default {
     "qualification2__title":"Web Development",
     "qualification2__describe":"Self-Study",
     "qualification3__title":"Frontend Developer",
-    "qualification3__describe":"sahnxi",
+    "qualification3__describe":"shanxi",
 
     "portfolio__title":"Portfolio",
     "portfolio__subtitle":"Most recent works",

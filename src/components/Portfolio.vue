@@ -5,7 +5,7 @@
 
         <div class="portfolio__container container swiper-container">
             <swiper class="swiper" :modules="modules" :slides-per-view="1" :space-between="3" :loop="true" navigation>
-                <swiper-slide v-for="(item, index) in portfolioList" :key="index">
+                <!-- <swiper-slide v-for="(item, index) in portfolioList" :key="index">
                     <div class="portfolio__content grid swiper-slide">
                         <img :src="item.img" alt="" class="portfolio__img" />
                         <div class="portfolio_">
@@ -16,6 +16,43 @@
                                 {{ $t(item.describe) }}
                             </p>
                             <a :href="item.url" target="_blank" class="button button__flex button__small portfolio__button">
+                                Demo
+                                <i class="alicon alicon-zhixiangyou button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </swiper-slide> -->
+
+                <swiper-slide>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="@/assets/img/qiantai.png" alt="" class="portfolio__img" />
+                        <div class="portfolio_">
+                            <h3 class="portfolio__title" i18n="portfolio1__title">
+                                {{ $t(portfolioList[0].title) }}
+                            </h3>
+                            <p class="portfolio__description" i18n="portfolio1__description">
+                                {{ $t(portfolioList[0].describe) }}
+                            </p>
+                            <a :href="portfolioList[0].url" target="_blank"
+                                class="button button__flex button__small portfolio__button">
+                                Demo
+                                <i class="alicon alicon-zhixiangyou button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="@/assets/img/houtai.png" alt="" class="portfolio__img" />
+                        <div class="portfolio_">
+                            <h3 class="portfolio__title" i18n="portfolio1__title">
+                                {{ $t(portfolioList[1].title) }}
+                            </h3>
+                            <p class="portfolio__description" i18n="portfolio1__description">
+                                {{ $t(portfolioList[1].describe) }}
+                            </p>
+                            <a :href="portfolioList[1].url" target="_blank"
+                                class="button button__flex button__small portfolio__button">
                                 Demo
                                 <i class="alicon alicon-zhixiangyou button__icon"></i>
                             </a>
@@ -44,13 +81,13 @@ export default {
                 url: 'https://github.com/laocuibanzhuan/shangpinhui',
                 title: 'portfolio1__title',
                 describe: 'portfolio1__description',
-                img: 'src/assets/img/qiantai.png'
+                img: '../assets/img/qiantai.png'
             },
             {
                 url: 'https://github.com/laocuibanzhuan/back-stage-management',
                 title: 'portfolio2__title',
                 describe: 'portfolio2__description',
-                img: 'src/assets/img/houtai.png'
+                img: '../assets/img/houtai.png'
             }
         ])
         return { portfolioList, modules: [Navigation], }
