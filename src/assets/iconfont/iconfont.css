@@ -1,8 +1,8 @@
 @font-face {
     font-family: "alicon"; 
-    src: url('icon/iconfont.woff2') format('woff2'),
-         url('icon/iconfont.woff') format('woff'),
-         url('icon/iconfont.ttf') format('truetype');
+    src: url('iconfont.woff2') format('woff2'),
+         url('iconfont.woff') format('woff'),
+         url('iconfont.ttf') format('truetype');
   }
   
   .alicon {
